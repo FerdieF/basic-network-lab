@@ -27,3 +27,33 @@ communication works from Layer 2 to Layer 3.
                        │
                     Windows
                  192.168.56.104
+
+## Lab Environment
+
+| Component | Role | Network |
+|---|---|---|
+| Kali Linux | Analysis / testing machine | Host-Only + NAT |
+| Windows 11 | Target / endpoint | Host-Only |
+| VirtualBox | Virtualization platform | Host-Only Network |
+
+### Network
+
+```text
+Host-Only Network
+192.168.56.0/24
+
+        ┌──────────────────────┐
+        │   VirtualBox         │
+        │   Host-Only Network  │
+        └──────────┬───────────┘
+                   │
+          ┌────────┴────────┐
+          │                 │
+       Kali Linux        Windows 11
+     192.168.56.103    192.168.56.104
+
+# 1. VirtualBox Network Configuration
+
+The Kali VM uses a Host-Only Adapter for communication with the Windows VM.
+
+The Host-Only network provides an isolated virtual network where the VMs can communicate with each other and the host without directly becoming part of the physical LAN.
