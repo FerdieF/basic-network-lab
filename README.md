@@ -62,9 +62,9 @@ Host-Only Network
 - The network interfaces were checked using:
 ```text
 ip addr
-
+```
 - Kali uses two interfaces:
 ```text
 eth0 → 192.168.56.103/24
-eth1 → 10.0.3.15/24
+eth1 → 10.0.3.15/24 ```
 -The Host-Only interface (eth0) is used for communication with Windows.
