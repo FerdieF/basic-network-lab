@@ -53,4 +53,18 @@ Host-Only Network
        Kali Linux        Windows 11
      192.168.56.103    192.168.56.104
 ```
-#
+#### 1. VirtualBox Network Configuration
+- The Kali VM uses a Host-Only Adapter for communication with the Windows VM.
+- The Host-Only network provides an isolated virtual network where the VMs can communicate with each other and the host without directly becoming part of the physical LAN.
+
+#### 2. IP Configuration
+##### Kali Linux
+- The network interfaces were checked using:
+```text
+ip addr
+
+- Kali uses two interfaces:
+```text
+eth0 → 192.168.56.103/24
+eth1 → 10.0.3.15/24
+-The Host-Only interface (eth0) is used for communication with Windows.
