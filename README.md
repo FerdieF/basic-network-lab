@@ -13,22 +13,8 @@ communication works from Layer 2 to Layer 3.
 - Observe Ethernet, IPv4, and ICMP using tcpdump
 
 ## Lab Topology
+![Topology](images/topology-basicnetworklab.jpeg)
 
-```text
-                    Internet
-                       │
-                   NAT / eth1
-                       │
-                      Kali
-                 192.168.56.103
-                       │
-                Host-Only Network
-                192.168.56.0/24
-                       │
-                    Windows
-                 192.168.56.104
-
-```
 ## Lab Environment
 
 | Component | Role | Network |
