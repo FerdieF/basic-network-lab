@@ -13,7 +13,7 @@ communication works from Layer 2 to Layer 3.
 - Observe Ethernet, IPv4, and ICMP using tcpdump
 
 ## Lab Topology
-![Topology](images/topology-basicnetworklab.jpeg)
+![Topology](images/topology.jpg)
 
 ## Lab Environment
 
