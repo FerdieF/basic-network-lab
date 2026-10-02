@@ -24,20 +24,7 @@ communication works from Layer 2 to Layer 3.
 | VirtualBox | Virtualization platform | Host-Only Network |
 
 ## Network
-
-```text
-Host-Only Network
-192.168.56.0/24
-
-        ┌──────────────────────┐
-        │   VirtualBox         │
-        │   Host-Only Network  │
-        └──────────┬───────────┘
-                   │
-          ┌────────┴────────┐
-          │                 │
-       Kali Linux        Windows 11
-     192.168.56.103    192.168.56.104
+![Topology] (images/network.jpg)
 ```
 ### 1. VirtualBox Network Configuration
 The Kali VM uses a Host-Only Adapter for communication with the Windows VM.
